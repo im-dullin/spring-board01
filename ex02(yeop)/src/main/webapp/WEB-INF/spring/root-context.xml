@@ -27,7 +27,7 @@
 	
 	<bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
-		<property name="typeAliasesPackage" value="com.dullinsub.domain"></property> <!-- alias사용 위한 추가설정 -->
+		<property name="typeAliasesPackage" value="com.dullinsub.domain" /> <!-- alias사용 위한 추가설정 -->
 	</bean>
 	
 	<bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager" id="transactionManager">
